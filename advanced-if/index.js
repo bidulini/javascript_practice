@@ -1,6 +1,7 @@
 var a = prompt("Unesite varijablu: ");
 a=parseInt(a);
 
+
 if (a % 2 === 0) {
     console.log("Broj je paran!");
 }
