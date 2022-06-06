@@ -19,3 +19,4 @@ else if (uslov1 || uslov2 || uslov3 || uslov4)
 {
     console.log("Bar jedan clan je broj!");
 }
+else {console.log("Clanovi niza nisu brojevi!");}
