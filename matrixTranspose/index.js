@@ -1,28 +1,24 @@
-function multiply() {
+function transpose() {
 
     let size = document.getElementById("size").value;
 
     let firstM = document.getElementById("firstMatrix").value.split(" ");
     let firstM1 = document.getElementById("firstMatrix1").value.split(" ");
-    let secondM = document.getElementById("secondMatrix").value.split(" ");
-    let secondM1 = document.getElementById("secondMatrix1").value.split(" ");
-
+    
     let matrix1 = [firstM, firstM1];
-    let matrix2 = [secondM, secondM1];
 
-    let matrixMul = [[0, 0], [0, 0]];
+    let matrixTran = [[0, 0], [0, 0]];
 
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
             matrix1[i][j] = parseInt(matrix1[i][j]);
-            matrix2[i][j] = parseInt(matrix2[i][j]);
         }
     }
 
 
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
-            matrixMul[i][j] = matrix1[i][j] * matrix2[i][j];
+            matrixTran[i][j] = matrix1[j][i];
         }
     }
     let printAll="The First matrix is : ";
@@ -34,21 +30,12 @@ function multiply() {
         }
     }
      
-    printAll=printAll+"<br>The Second Matrix is: "
+    printAll=printAll+"<br>The Transpose of the matrix is:"
 
     for (let i = 0; i < size; i++) {
         printAll+="<br>"
         for (let j = 0; j < size; j++) {
-            printAll+=matrix2[i][j]+" ";
-        }
-    }
-     
-    printAll=printAll+"<br>The Multiplication of two matrix is:"
-
-    for (let i = 0; i < size; i++) {
-        printAll+="<br>"
-        for (let j = 0; j < size; j++) {
-            printAll+=matrixMul[i][j]+" ";
+            printAll+=matrixTran[i][j]+" ";
         }
     }
 
