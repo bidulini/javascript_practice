@@ -26,7 +26,7 @@ const rowColSum = () => {
     for (let i = 0; i < 3; i++) {
         document.getElementById("showResult").innerHTML +="<br>"+rowSum[i];
     }
-    
+
 
 
 
