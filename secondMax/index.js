@@ -5,7 +5,6 @@ const makeArray = () => {
 
     let number = document.getElementById("takeNumber").value;
 
-
     if (number === "end") {
         let max = array[0];
         let min = array[0];
