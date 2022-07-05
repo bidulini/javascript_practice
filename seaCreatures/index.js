@@ -17,3 +17,9 @@ else {
 
 //this way we check if the creature is in our list of keys inside an object
 // 'in' looks for keys in objects
+
+console.log(Object.keys(nameToRareness)); //Object.keys gives us info about keys
+console.log(Object.values(nameToRareness));//Object.value gives us the value of the key
+
+delete nameToRareness['starfish']; //this is how we delete the key, same as delete nameToRareness.starfish;
+console.log(nameToRareness);
